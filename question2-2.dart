@@ -1,26 +1,28 @@
 import 'dart:io';
 
-enum Vowel{ a, e, i, o, u, A, E, I, O, U}
-void main()
-{
+enum Vowel { a, e, i, o, u, A, E, I, O, U }
+
+void main() {
   print("Please Enter Character:");
-   String? Character  = stdin.readLineSync();
-  const vowel = Vowel;
-  switch (vowel) {
-    case Vowel.a:
-    case Vowel.A:
-    case Vowel.e:
-    case Vowel.E:
-    case Vowel.i:
-    case Vowel.I:
-    case Vowel.o:
-    case Vowel.O:
-    case Vowel.u:
-    case Vowel.U:
-        print("The letters are vowels.");
+  String? Character = stdin.readLineSync();
+
+  if (Character != null && Character.length == 1) {
+    
+    Character = Character.toLowerCase();
+
+    switch (Character) {
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+        print("The letter is a vowel.");
         break;
-    default:
-        print("The letters are consonants.");
-      break;
+      default:
+        print("The letter is a consonant.");
+        break;
+    }
+  } else {
+    print("Please enter a valid character.");
   }
 }
