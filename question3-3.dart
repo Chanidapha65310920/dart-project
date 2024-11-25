@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void createUser(String name, int age, {bool isActive = true}) {
   print("Name: $name");
   print("Age: $age");
@@ -5,9 +7,16 @@ void createUser(String name, int age, {bool isActive = true}) {
 }
 
 void main() {
-  // เรียกใช้ฟังก์ชันพร้อมส่งค่าทุกพารามิเตอร์
-  createUser("John", 25, isActive: false);
+  stdout.write("Enter your name: ");
+  String name = stdin.readLineSync() ?? "";
 
-  // เรียกใช้ฟังก์ชันโดยใช้ค่าเริ่มต้นของ isActive
-  createUser("Alice", 30);
+  stdout.write("Enter your age: ");
+  int age = int.tryParse(stdin.readLineSync() ?? "") ?? 0;
+
+  stdout.write("Is the user active? (true/false, default: true): ");
+  String? isActiveInput = stdin.readLineSync();
+  bool isActive = isActiveInput?.toLowerCase() == 'false' ? false : true;
+
+  createUser(name, age, isActive: isActive);
 }
+
