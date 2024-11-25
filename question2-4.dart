@@ -1,9 +1,10 @@
-void main()
-{
-  int num = ;
-  
-  for(int i=1 ; i<13 ; i++){
-    int total = num * i;
-    print("$num * $i= $total");
+void main() {
+  for (int i = 1; i <= 9; i++) {
+    print("ตารางสูตรคูณแม่ $i:");
+    for (int j = 1; j <= 12; j++) {
+      int result = i * j;
+      print("$i * $j = $result");
+    }
+    print(""); 
   }
 }
