@@ -8,5 +8,5 @@ void main() {
   print("Enter number: ");
   int number = int.parse(stdin.readLineSync()!); 
 
-   print("Is the number even? ${isEven(number)}");
+  print("Is the number even? ${isEven(number)}");
 }
