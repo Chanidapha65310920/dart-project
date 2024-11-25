@@ -5,6 +5,55 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "labOOP5",
+            "request": "launch",
+            "mainClass": "labOOP5",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "labOOP4",
+            "request": "launch",
+            "mainClass": "labOOP4",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "labOOP3",
+            "request": "launch",
+            "mainClass": "labOOP3",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "LabOOP2",
+            "request": "launch",
+            "mainClass": "LabOOP2",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "labOOP2",
+            "request": "launch",
+            "mainClass": "labOOP2",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "labOOP1",
+            "request": "launch",
+            "mainClass": "labOOP1",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
+            "type": "java",
+            "name": "labOOP",
+            "request": "launch",
+            "mainClass": "labOOP",
+            "projectName": "dart-project_4591d13d"
+        },
+        {
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart"
